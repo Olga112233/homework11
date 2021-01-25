@@ -1,45 +1,38 @@
-function createCalculator() {
-    const result = {
-        x: 10,
-    }
-   
+function createCalculator(result) {    
+
 
 return {
     
     sum: function () {
-        result.x = result.x + 5;
+        result = result + 5;
+        console.log(result);
     },
     
     mult: function () {
-        result.x = result.x * 10;
+        result = result * 10;
+        console.log(result);
     },
 
     sub: function () {
-        result.x = result.x - 40;
+        result = result - 40;
+        console.log(result);
     },
 
     div: function () {
-        result.x = result.x / 10;
+        result = result / 10;
+        console.log(result);
     },
 
     set: function () {
-        result.x = 100;
-    },
-
-    showcreateCalculator() {
+        result = 100;
         console.log(result);
-    }
+    },    
 }
 };
 
 const calc = createCalculator(10);
 calc.sum();
-calc.showcreateCalculator();
 calc.mult();
-calc.showcreateCalculator();
 calc.sub();
-calc.showcreateCalculator();
 calc.div();
-calc.showcreateCalculator();
 calc.set();
-calc.showcreateCalculator();
